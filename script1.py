@@ -11,11 +11,10 @@ for i in nums:
     total += i
     if min_number > i:
         min_number = i
-    elif min_number == 0:
+    elif min_number == nums[0]:
         min_number = i
     if max_number < i:
         max_number = i
-    i += 1
 avg_number = total / count
 print(f"Список: {nums} \nВідсортований за зростанням список:{nums_sorted}")
 print(f"Кількість чисел у списку: {count} \nСума загалом: {total}")
