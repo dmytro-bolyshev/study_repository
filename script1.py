@@ -3,15 +3,13 @@ nums_sorted = nums.copy()
 nums_sorted.sort()
 count = 0
 total = 0
-min_number = 0
-max_number = 0
+min_number = nums[0]
+max_number = nums[0]
 avg_number = 0
 for i in nums:
     count += 1
     total += i
     if min_number > i:
-        min_number = i
-    elif min_number == 0:
         min_number = i
     if max_number < i:
         max_number = i
